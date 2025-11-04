@@ -1,0 +1,12 @@
+# OS-generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local virtual env / tools
+.cls/
+
+# Large local docs and backups (do not push)
+doc/
+backup/
+

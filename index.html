@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CLS Solution은 AI 기반의 자재/차량 구분 및 무게 자동보정 기술을 통해 스마트 건설 현장의 효율성과 신뢰성을 극대화하는 선도적인 AI 솔루션 전문 기업입니다.">
+    <meta name="keywords" content="AI 건설, 스마트 건설, 자재 구분, 차량 인식, 무게 보정, 건설 현장 관리, SECOND EYES">
+    <meta name="author" content="CLS Solution">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="CLS Solution | AI 기반 스마트 건설 현장 관리 솔루션">
+    <meta property="og:description" content="AI 기술로 건설의 신뢰를 설계합니다">
+    <meta property="og:type" content="website">
+
+    <title>CLS Solution | AI 기반 스마트 건설 현장 관리 솔루션</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles-v2.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="#home" class="logo">
+                    <img src="./assets/img/cls-black-hor-logo.svg" alt="CLS Solution Logo" style="height: 32px; width: auto;">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <ul class="nav-list">
+                        <li><a href="#vision" class="nav-link">회사소개</a></li>
+                        <li><a href="#products" class="nav-link">제품</a></li>
+                        <li><a href="#technology" class="nav-link">기술·R&D</a></li>
+                        <li><a href="#partners" class="nav-link">파트너사</a></li>
+                        <li><a href="#contact" class="nav-link">문의하기</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="다크모드 전환">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.657 4.343L14.243 5.757M5.757 14.243L4.343 15.657M15.657 15.657L14.243 14.243M5.757 5.757L4.343 4.343" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <a href="#contact" class="btn btn-primary">상담 신청</a>
+
+                    <!-- Hamburger Menu -->
+                    <button id="hamburger" class="hamburger" aria-label="메뉴 열기">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav id="mobile-nav" class="nav-mobile">
+                <ul class="nav-list-mobile">
+                    <li><a href="#vision" class="nav-link-mobile">회사소개</a></li>
+                    <li><a href="#products" class="nav-link-mobile">제품</a></li>
+                    <li><a href="#technology" class="nav-link-mobile">기술·R&D</a></li>
+                    <li><a href="#partners" class="nav-link-mobile">파트너사</a></li>
+                    <li><a href="#contact" class="nav-link-mobile">문의하기</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <!-- Hero Background Slider -->
+            <div class="hero-bg">
+                <div class="hero-slide bg-clean is-active" aria-hidden="true"></div>
+                <div class="hero-slide bg-site" aria-hidden="true" data-src="assets/img/"></div>
+                <div class="hero-bg-overlay" aria-hidden="true"></div>
+                <!-- Geometric Background Decoration -->
+                <svg class="hero-geo" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="geo-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#1E40AF" stop-opacity="0.28"/>
+                            <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.18"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Right cluster circles -->
+                    <g transform="translate(900, 420)">
+                        <circle cx="0" cy="0" r="180" fill="none" stroke="url(#geo-blue)" stroke-width="2"/>
+                        <circle cx="0" cy="0" r="240" fill="none" stroke="url(#geo-blue)" stroke-width="1.5"/>
+                        <circle cx="0" cy="0" r="300" fill="none" stroke="url(#geo-blue)" stroke-width="1"/>
+                        <circle cx="0" cy="0" r="360" fill="none" stroke="url(#geo-blue)" stroke-width="0.8"/>
+                    </g>
+                    <!-- Sub cluster top-right -->
+                    <g transform="translate(1080, 180)">
+                        <circle cx="0" cy="0" r="70" fill="none" stroke="url(#geo-blue)" stroke-width="1.2"/>
+                        <circle cx="0" cy="0" r="110" fill="none" stroke="url(#geo-blue)" stroke-width="0.9"/>
+                    </g>
+                    <!-- Connecting lines -->
+                    <g stroke="url(#geo-blue)" stroke-width="1">
+                        <line x1="1020" y1="420" x2="1150" y2="200"/>
+                        <line x1="900" y1="420" x2="1160" y2="560"/>
+                        <line x1="960" y1="600" x2="1140" y2="650"/>
+                    </g>
+                    <!-- Dots -->
+                    <g fill="#3B82F6" fill-opacity="0.25">
+                        <circle cx="1020" cy="420" r="5"/>
+                        <circle cx="1150" cy="200" r="4"/>
+                        <circle cx="1160" cy="560" r="4"/>
+                        <circle cx="1140" cy="650" r="3.5"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="section-badge">AI-Powered Smart Construction</span>
+                    <h1 class="hero-title">AI 기술로<br>건설의 신뢰를 설계합니다</h1>
+                    <p class="hero-subtitle">인공지능 기술을 통해 건설현장의 문제를 해결하고,<br>사람의 한계를 기술로 보완하는 지능형 시스템</p>
+                    <div class="hero-cta">
+                        <a href="#products" class="btn btn-primary btn-lg">제품 알아보기</a>
+                        <!-- <a href="#contact" class="btn btn-outline btn-lg">회사소개서 다운로드</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Illustration -->
+            <div class="hero-illustration">
+                <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="150" cy="150" r="80" stroke="#1E40AF" stroke-width="2" opacity="0.3"/>
+                    <circle cx="150" cy="150" r="100" stroke="#1E40AF" stroke-width="1" opacity="0.2"/>
+                    <circle cx="150" cy="150" r="120" stroke="#1E40AF" stroke-width="1" opacity="0.1"/>
+                    <circle cx="150" cy="150" r="40" fill="#1E40AF" opacity="0.5"/>
+                    <text x="150" y="165" font-size="40" text-anchor="middle" opacity="0.8">🤖</text>
+                    <g opacity="0.4">
+                        <circle cx="150" cy="70" r="12" fill="#1E40AF"/>
+                        <circle cx="230" cy="150" r="12" fill="#1E40AF"/>
+                        <circle cx="150" cy="230" r="12" fill="#1E40AF"/>
+                        <circle cx="70" cy="150" r="12" fill="#1E40AF"/>
+                        <circle cx="200" cy="100" r="10" fill="#3B82F6"/>
+                        <circle cx="200" cy="200" r="10" fill="#3B82F6"/>
+                        <circle cx="100" cy="200" r="10" fill="#3B82F6"/>
+                        <circle cx="100" cy="100" r="10" fill="#3B82F6"/>
+                    </g>
+                    <g stroke="#1E40AF" stroke-width="1" opacity="0.2">
+                        <line x1="150" y1="150" x2="150" y2="70"/>
+                        <line x1="150" y1="150" x2="230" y2="150"/>
+                        <line x1="150" y1="150" x2="150" y2="230"/>
+                        <line x1="150" y1="150" x2="70" y2="150"/>
+                        <line x1="150" y1="150" x2="200" y2="100"/>
+                        <line x1="150" y1="150" x2="200" y2="200"/>
+                        <line x1="150" y1="150" x2="100" y2="200"/>
+                        <line x1="150" y1="150" x2="100" y2="100"/>
+                    </g>
+                    <g font-size="16" text-anchor="middle">
+                        <text x="150" y="75" opacity="0.6">📹</text>
+                        <text x="230" y="155" opacity="0.6">🚛</text>
+                        <text x="150" y="235" opacity="0.6">⚖️</text>
+                        <text x="70" y="155" opacity="0.6">📊</text>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Vision Section (NEW) -->
+        <section id="vision" class="vision">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">OUR VISION</span>
+                    <h2 class="section-title">비전</h2>
+                    <p class="section-description">
+                        AI 기술로 스마트건설의 새로운 기준을 만들어갑니다
+                    </p>
+                </div>
+
+                <div class="vision-grid">
+                    <!-- Vision Card 1 -->
+                    <div class="vision-card">
+                        <div class="vision-icon">🎯</div>
+                        <h3 class="vision-title">AI로 건설의<br>신뢰를 설계하다</h3>
+                        <p class="vision-description">
+                            인공지능 기술을 통해 건설 현장의 데이터 기반 의사결정과 품질관리를 실현합니다.
+                        </p>
+                    </div>
+
+                    <!-- Vision Card 2 -->
+                    <div class="vision-card">
+                        <div class="vision-icon">🏗️</div>
+                        <h3 class="vision-title">스마트건설의<br>표준이 되다</h3>
+                        <p class="vision-description">
+                            자재, 차량, 중량 등 다양한 요소를 자동화·지능화하여 차세대 스마트건설의 중심 기업으로 성장합니다.
+                        </p>
+                    </div>
+
+                    <!-- Vision Card 3 -->
+                    <div class="vision-card">
+                        <div class="vision-icon">🛡️</div>
+                        <h3 class="vision-title">기술로 부실을 막고,<br>신뢰를 세우다</h3>
+                        <p class="vision-description">
+                            SECOND EYES를 비롯한 AI 감시 시스템으로 투명하고 안전한 건설환경을 만들어갑니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" data-target="99.8">0</div>
+                        <div class="stat-unit">%</div>
+                        <div class="stat-label">AI 자재 구분 정확도</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-value" data-target="50">0</div>
+                        <div class="stat-unit">+</div>
+                        <div class="stat-label">전국 주요 건설 현장 적용</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-value" data-target="1">0</div>
+                        <div class="stat-unit">M+</div>
+                        <div class="stat-label">실시간 분석 데이터 처리량</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-value" data-target="24">0</div>
+                        <div class="stat-unit">/7</div>
+                        <div class="stat-label">무중단 모니터링 시스템</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">PRODUCTS</span>
+                    <h2 class="section-title">제품</h2>
+                    <p class="section-description">
+                        AI 비전 기술 기반의 스마트건설 솔루션
+                    </p>
+                </div>
+
+                <!-- SECOND EYES 01 -->
+                <div class="product-detail">
+                    <div class="product-header">
+                        <div class="product-badge">SECOND EYES 01</div>
+                        <h3 class="product-title">AI 기반 자재·차량 자동 구분 시스템</h3>
+                        <p class="product-description">
+                            딥러닝 기반 컴퓨터 비전 기술로 건설 현장의 자재와 차량을 실시간으로 인식하고 분류합니다.
+                        </p>
+                        <button class="btn btn-primary modal-trigger" data-modal="product-01">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-right: 8px;">
+                                <path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            상세보기
+                        </button>
+                    </div>
+
+                    <div class="product-content">
+                        <div class="product-features">
+                            <div class="feature-group">
+                                <h4 class="feature-title">📦 10종 자재 클래스</h4>
+                                <div class="feature-grid">
+                                    <div class="feature-item">🏔️ 흙</div>
+                                    <div class="feature-item">🏖️ 모래</div>
+                                    <div class="feature-item">🪨 암</div>
+                                    <div class="feature-item">🔩 철근</div>
+                                    <div class="feature-item">🏗️ 철골</div>
+                                    <div class="feature-item">🛣️ 아스콘</div>
+                                    <div class="feature-item">🏢 시멘트</div>
+                                    <div class="feature-item">🧱 몰탈</div>
+                                    <div class="feature-item">🗑️ 폐기물</div>
+                                    <div class="feature-item">📦 기타</div>
+                                </div>
+                            </div>
+
+                            <div class="feature-group">
+                                <h4 class="feature-title">🚛 4종 차량 클래스</h4>
+                                <div class="feature-grid">
+                                    <div class="feature-item">
+                                        <strong>레미콘</strong>
+                                        <span class="feature-sub">(대/중/소)</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <strong>트럭</strong>
+                                        <span class="feature-sub">(대/중/소)</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <strong>덤프</strong>
+                                        <span class="feature-sub">(대/중/소)</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <strong>벌크</strong>
+                                        <span class="feature-sub">(대/중/소)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feature-group">
+                                <h4 class="feature-title">🔄 Process & Flow</h4>
+                                <div class="process-flow">
+                                    <div class="flow-step">
+                                        <div class="flow-number">1</div>
+                                        <div class="flow-content">
+                                            <strong>차량 진입</strong>
+                                            <span>비전 카메라 감지</span>
+                                        </div>
+                                    </div>
+                                    <div class="flow-arrow">→</div>
+                                    <div class="flow-step">
+                                        <div class="flow-number">2</div>
+                                        <div class="flow-content">
+                                            <strong>AI 분석</strong>
+                                            <span>자재/차량 구분</span>
+                                        </div>
+                                    </div>
+                                    <div class="flow-arrow">→</div>
+                                    <div class="flow-step">
+                                        <div class="flow-number">3</div>
+                                        <div class="flow-content">
+                                            <strong>데이터 기록</strong>
+                                            <span>자동 입력 및 저장</span>
+                                        </div>
+                                    </div>
+                                    <div class="flow-arrow">→</div>
+                                    <div class="flow-step">
+                                        <div class="flow-number">4</div>
+                                        <div class="flow-content">
+                                            <strong>리포트 생성</strong>
+                                            <span>실시간 모니터링</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="feature-group">
+                                <h4 class="feature-title">🔌 하드웨어 연동</h4>
+                                <ul class="feature-list">
+                                    <li>CAS 저울 및 축중기 (통신 프로토콜 연동)</li>
+                                    <li>Intflow 비전 센싱 카메라</li>
+                                    <li>Silicon Bridge LPR (차량번호판 인식)</li>
+                                    <li>엣지 컴퓨팅 디바이스 (실시간 AI 추론)</li>
+                                </ul>
+                            </div> -->
+
+                            <div class="feature-group">
+                                <h4 class="feature-title">🏗️ 적용 가능 현장</h4>
+                                <div class="application-grid">
+                                    <div class="application-item">토목 공사</div>
+                                    <div class="application-item">건축 공사</div>
+                                    <div class="application-item">레미콘 플랜트</div>
+                                    <div class="application-item">골재 플랜트</div>
+                                    <div class="application-item">아스콘 플랜트</div>
+                                    <div class="application-item">폐기물 처리장</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-illustration">
+                            <img src="assets/svg/camera-eye.svg" alt="SECOND EYES 01 Illustration">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECOND EYES 02 -->
+                <div class="product-detail">
+                    <div class="product-header">
+                        <div class="product-badge">SECOND EYES 02</div>
+                        <h3 class="product-title">AI 기반 속도-무게 자동보정 시스템</h3>
+                        <p class="product-description">
+                            회귀분석 알고리즘을 통해 축중기의 저속 주행 오차를 자동으로 보정하여 정밀한 중량 측정을 제공합니다.
+                        </p>
+                        <button class="btn btn-primary modal-trigger" data-modal="product-02">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-right: 8px;">
+                                <path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            상세보기
+                        </button>
+                    </div>
+
+                    <div class="product-content">
+                        <div class="product-features">
+                            <div class="feature-group">
+                                <h4 class="feature-title">📊 9개 속도 구간 보정</h4>
+                                <div class="speed-zones">
+                                    <div class="speed-zone">0-5 km/h</div>
+                                    <div class="speed-zone">5-10 km/h</div>
+                                    <div class="speed-zone">10-15 km/h</div>
+                                    <div class="speed-zone">15-20 km/h</div>
+                                    <div class="speed-zone">20-25 km/h</div>
+                                    <div class="speed-zone">25-30 km/h</div>
+                                    <div class="speed-zone">30-35 km/h</div>
+                                    <div class="speed-zone">35-40 km/h</div>
+                                    <div class="speed-zone">40+ km/h</div>
+                                </div>
+                                <p class="feature-note">
+                                    각 속도 구간별로 최적화된 보정 계수를 적용하여 정확도 향상
+                                </p>
+                            </div>
+
+                            <div class="feature-group">
+                                <h4 class="feature-title">🧮 회귀분석 알고리즘</h4>
+                                <div class="algorithm-details">
+                                    <div class="algorithm-item">
+                                        <strong>다중 회귀 분석</strong>
+                                        <p>속도, 차량 유형, 적재량 등 다변수 분석</p>
+                                    </div>
+                                    <div class="algorithm-item">
+                                        <strong>실시간 보정</strong>
+                                        <p>측정 즉시 AI 보정값 적용</p>
+                                    </div>
+                                    <div class="algorithm-item">
+                                        <strong>학습 모델 업데이트</strong>
+                                        <p>현장 데이터 기반 지속적 정확도 개선</p>
+                                    </div>
+                                    <div class="algorithm-item">
+                                        <strong>오차율 최소화</strong>
+                                        <p>±2% 이내 정밀도 달성</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="feature-group">
+                                <h4 class="feature-title">🔌 하드웨어 연동</h4>
+                                <ul class="feature-list">
+                                    <li>CAS 축중기 (통신 프로토콜 연동)</li>
+                                    <li>속도 센서 (차량 주행 속도 실시간 측정)</li>
+                                    <li>엣지 컴퓨팅 디바이스 (AI 보정 연산)</li>
+                                    <li>데이터 로거 (측정 이력 저장 및 분석)</li>
+                                </ul>
+                            </div> -->
+
+                            <div class="feature-group">
+                                <h4 class="feature-title">🏗️ 적용 가능 현장</h4>
+                                <div class="application-grid">
+                                    <div class="application-item">고속 계량 시스템</div>
+                                    <div class="application-item">물류 센터</div>
+                                    <div class="application-item">레미콘 플랜트</div>
+                                    <div class="application-item">골재 반입 관리</div>
+                                    <div class="application-item">폐기물 계량</div>
+                                    <div class="application-item">공장 자재 관리</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-illustration">
+                            <img src="assets/svg/scale.svg" alt="SECOND EYES 02 Illustration">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section id="technology" class="technology">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">TECHNOLOGY & R&D</span>
+                    <h2 class="section-title">핵심 기술</h2>
+                    <p class="section-description">
+                        최첨단 AI 기술로 건설 현장의 혁신을 이끌어갑니다
+                    </p>
+                </div>
+
+                <div class="tech-grid">
+                    <!-- Tech Card 1: AI Vision Sensing -->
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <circle cx="40" cy="40" r="30" stroke="#1E40AF" stroke-width="2" opacity="0.3"/>
+                                <circle cx="40" cy="40" r="15" fill="#1E40AF" opacity="0.5"/>
+                                <path d="M20 40 L30 40 M50 40 L60 40 M40 20 L40 30 M40 50 L40 60" stroke="#1E40AF" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="tech-title">AI 비전센싱 기술</h3>
+                        <p class="tech-description">
+                            딥러닝 기반 컴퓨터 비전으로 자재와 차량을 실시간 분류
+                        </p>
+                        <div class="tech-details">
+                            <div class="tech-detail-item">
+                                <div class="tech-detail-icon">🧠</div>
+                                <div class="tech-detail-content">
+                                    <strong>Computer Vision + Deep Learning</strong>
+                                    <p>CNN 기반 이미지 분류 및 객체 탐지 알고리즘</p>
+                                </div>
+                            </div>
+                            <div class="tech-detail-item">
+                                <div class="tech-detail-icon">🎯</div>
+                                <div class="tech-detail-content">
+                                    <strong>고정밀 AI 비전</strong>
+                                    <p>98.5% 이상의 인식 정확도 (10종 자재, 4종 차량)</p>
+                                </div>
+                            </div>
+                            <div class="tech-detail-item">
+                                <div class="tech-detail-icon">🔄</div>
+                                <div class="tech-detail-content">
+                                    <strong>강화학습 모델</strong>
+                                    <p>현장 데이터 기반 지속적 학습 및 정확도 향상</p>
+                                </div>
+                            </div>
+                            <div class="tech-detail-item">
+                                <div class="tech-detail-icon">⚡</div>
+                                <div class="tech-detail-content">
+                                    <strong>엣지 컴퓨팅</strong>
+                                    <p>실시간 AI 추론 (평균 처리 시간 0.3초)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary modal-trigger" data-modal="tech-vision">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-right: 8px;">
+                                <path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            상세보기
+                        </button>
+                    </div>
+
+                    <!-- Tech Card 2: AI Weight Calibration -->
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <path d="M20 50 Q20 30 40 30 T60 50" stroke="#1E40AF" stroke-width="2" fill="none" opacity="0.5"/>
+                                <path d="M20 55 Q20 35 40 35 T60 55" stroke="#3B82F6" stroke-width="2" fill="none" opacity="0.7"/>
+                                <circle cx="20" cy="50" r="3" fill="#1E40AF"/>
+                                <circle cx="40" cy="30" r="3" fill="#1E40AF"/>
+                                <circle cx="60" cy="50" r="3" fill="#1E40AF"/>
+                            </svg>
+                        </div>
+                        <h3 class="tech-title">AI 속도-무게 자동보정</h3>
+                        <p class="tech-description">
+                            회귀분석 알고리즘으로 축중기 저속 주행 오차 보정
+                        </p>
+                        <div class="tech-details">
+                            <div class="tech-detail-item">
+                                <div class="tech-detail-icon">📊</div>
+                                <div class="tech-detail-content">
+                                    <strong>저속 주행 보정</strong>
+                                    <p>0-40km/h 구간의 속도별 오차 자동 보정</p>
+                                </div>
+                            </div>
+                            <div class="tech-detail-item">
+                                <div class="tech-detail-icon">🧮</div>
+                                <div class="tech-detail-content">
+                                    <strong>다중 회귀 분석</strong>
+                                    <p>속도, 차량 유형, 적재량 등 다변수 분석 모델</p>
+                                </div>
+                            </div>
+                            <div class="tech-detail-item">
+                                <div class="tech-detail-icon">🎚️</div>
+                                <div class="tech-detail-content">
+                                    <strong>9개 속도 구간</strong>
+                                    <p>5km/h 단위로 세분화된 보정 계수 적용</p>
+                                </div>
+                            </div>
+                            <div class="tech-detail-item">
+                                <div class="tech-detail-icon">⏱️</div>
+                                <div class="tech-detail-content">
+                                    <strong>실시간 데이터 처리</strong>
+                                    <p>측정 즉시 AI 보정값 적용 (±2% 이내 정밀도)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary modal-trigger" data-modal="tech-calibration">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-right: 8px;">
+                                <path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            상세보기
+                        </button>
+                    </div>
+                </div>
+
+                <!-- R&D Highlights -->
+                <div class="rd-highlights">
+                    <h3 class="rd-title">R&D 하이라이트</h3>
+                    <div class="rd-grid">
+                        <div class="rd-item">
+                            <div class="rd-number">01</div>
+                            <h4 class="rd-subtitle">KICT 공동연구</h4>
+                            <p class="rd-description">한국건설기술연구원과 AI 비전센싱 기술 공동 개발</p>
+                        </div>
+                        <div class="rd-item">
+                            <div class="rd-number">02</div>
+                            <h4 class="rd-subtitle">특허 출원</h4>
+                            <p class="rd-description">AI 기반 자재/차량 구분 및 무게 보정 알고리즘 특허 출원 완료</p>
+                        </div>
+                        <div class="rd-item">
+                            <div class="rd-number">03</div>
+                            <h4 class="rd-subtitle">현장 검증</h4>
+                            <p class="rd-description">15개 이상의 건설 현장에서 실증 완료 (50,000건 이상 처리)</p>
+                        </div>
+                        <div class="rd-item">
+                            <div class="rd-number">04</div>
+                            <h4 class="rd-subtitle">지속적 개선</h4>
+                            <p class="rd-description">현장 피드백 기반 AI 모델 업데이트 (월 1회 배포)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners" class="partners">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">PARTNERS</span>
+                    <h2 class="section-title">함께하는 파트너</h2>
+                    <p class="section-description">
+                        기술 협력부터 영업까지, 다양한 파트너와 함께 성장합니다
+                    </p>
+                </div>
+
+                <!-- Tech Partners -->
+                <div class="partner-category">
+                    <h3 class="partner-category-title">Tech Partners</h3>
+                    <div class="partner-grid">
+                        <div class="partner-card">
+                            <div class="partner-logo">
+                                <img src="assets/img/partner_cas_logo.svg" alt="CAS Logo" width="80" height="80" />
+                            </div>
+                            <p class="partner-name">CAS</p>
+                            <p class="partner-description">계측 시스템 전문 기업</p>
+                            <button class="btn btn-outline btn-sm modal-trigger" data-modal="partner-cas">상세보기</button>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-logo">
+                                <img src="assets/img/partner_kict_logo.svg" alt="KICT Logo" width="80" height="80" />
+                            </div>
+                            <p class="partner-name">KICT</p>
+                            <p class="partner-description">한국건설기술연구원</p>
+                            <button class="btn btn-outline btn-sm modal-trigger" data-modal="partner-kict">상세보기</button>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-logo">
+                                <img src="assets/img/partner_intflow_logo.svg" alt="Intflow Logo" width="80" height="80" />
+                            </div>
+                            <p class="partner-name">Intflow</p>
+                            <p class="partner-description">AI 플랫폼 개발</p>
+                            <button class="btn btn-outline btn-sm modal-trigger" data-modal="partner-intflow">상세보기</button>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-logo">
+                                <img src="assets/img/partner_silicon_bridge_logo.svg" alt="Silicon Bridge Logo" width="80" height="80" />
+                            </div>
+                            <p class="partner-name">Silicon Bridge</p>
+                            <p class="partner-description">하드웨어 솔루션</p>
+                            <button class="btn btn-outline btn-sm modal-trigger" data-modal="partner-siliconbridge">상세보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sales Partners -->
+                <div class="partner-category">
+                    <h3 class="partner-category-title">Sales Partners</h3>
+                    <div class="partner-grid">
+                        <div class="partner-card">
+                            <div class="partner-logo">
+                                <img src="assets/img/partner_ilmani_logo.svg" alt="Ilmani Logo" width="80" height="80" />
+                            </div>
+                            <p class="partner-name">일마니 (Ilmani)</p>
+                            <p class="partner-description">건설 유통 네트워크</p>
+                            <button class="btn btn-outline btn-sm modal-trigger" data-modal="partner-ilmani">상세보기</button>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-logo">
+                                <img src="assets/img/partner_The_Invention_Lab_logo.svg" alt="The Invention Lab Logo" width="80" height="80" />
+                            </div>
+                            <p class="partner-name">The Invention Lab</p>
+                            <p class="partner-description">혁신 기술 마케팅</p>
+                            <button class="btn btn-outline btn-sm modal-trigger" data-modal="partner-til">상세보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Target Customers -->
+                <div class="partner-category">
+                    <h3 class="partner-category-title">주요 고객사</h3>
+                    <div class="customer-types">
+                        <div class="customer-type-card">
+                            <h4>B2G</h4>
+                            <ul>
+                                <li>국토교통부 산하 건설 현장</li>
+                                <li>지방자치단체 토목 공사</li>
+                                <li>공기업 인프라 프로젝트</li>
+                                <li>스마트 시티 구축 사업</li>
+                            </ul>
+                        </div>
+                        <div class="customer-type-card">
+                            <h4>B2B</h4>
+                            <ul>
+                                <li>대형 건설사 (현대건설, 삼성물산 등)</li>
+                                <li>레미콘·골재 생산 업체</li>
+                                <li>건설 장비 임대 회사</li>
+                                <li>물류 및 운송 기업</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CEO Message Section -->
+        <section id="ceo" class="ceo-message">
+            <div class="container">
+                <div class="ceo-content">
+                    <div class="ceo-text">
+                        <span class="section-badge light">CEO MESSAGE</span>
+                        <h2 class="section-title light">CEO 메시지</h2>
+                        <blockquote class="ceo-quote">
+                            "건설 현장의 신뢰는 기술로 설계됩니다.<br>
+                            CLS Solution은 AI 기술을 통해 사람의 한계를 넘어선 정밀함과 투명성을 제공합니다."
+                        </blockquote>
+                        <div class="ceo-message-text">
+                            <p>
+                                건설 산업은 오랜 시간 사람의 경험과 판단에 의존해왔습니다.
+                                하지만 현장이 대형화·복잡화되면서 사람만으로는 모든 것을 완벽히 관리하기 어려워졌습니다.
+                            </p>
+                            <p>
+                                CLS Solution은 이러한 문제를 AI 기술로 해결합니다.
+                                <strong>SECOND EYES</strong>는 '제2의 눈'으로서 자재와 차량을 정밀하게 구분하고,
+                                무게 측정의 오차를 자동으로 보정하여 현장의 신뢰성을 높입니다.
+                            </p>
+                            <p>
+                                우리는 단순히 기술을 판매하는 것이 아니라, <strong>건설 현장의 파트너</strong>로서
+                                함께 성장하고자 합니다. 현장의 목소리에 귀 기울이고, 지속적으로 기술을 개선하며,
+                                스마트건설의 표준을 만들어가겠습니다.
+                            </p>
+                            <p>
+                                감사합니다.
+                            </p>
+                        </div>
+                        <div class="ceo-info">
+                            <div class="ceo-name">대표이사 박병규</div>
+                            <div class="ceo-title">CLS Solution CEO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">CLS Solution과 함께<br>스마트 건설을 시작하세요</h2>
+                    <p class="cta-description">
+                        무료 상담 신청을 통해 귀사의 현장에 최적화된 AI 솔루션을 경험해보세요.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary btn-lg">무료 상담 신청</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">CONTACT US</span>
+                    <h2 class="section-title">문의하기</h2>
+                    <p class="section-description">
+                        CLS Solution에 대해 궁금한 점이 있으시면 언제든 연락주세요
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8L10.89 13.26C11.23 13.47 11.61 13.59 12 13.59C12.39 13.59 12.77 13.47 13.11 13.26L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z" stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>이메일</h4>
+                                <p>contact@cls.ai.kr</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>전화</h4>
+                                <p>+82-31-913-1214</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M17.657 16.657L13.414 20.9C12.633 21.681 11.367 21.681 10.586 20.9L6.343 16.657C3.219 13.533 3.219 8.467 6.343 5.343C9.467 2.219 14.533 2.219 17.657 5.343C20.781 8.467 20.781 13.533 17.657 16.657Z" stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="11" r="3" stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>주소</h4>
+                                <p>경기도 고양시 일산서구 산현로17번길 7-8<br>102호-큐058호(탄현동)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">이름 *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">이메일 *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">회사명</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">전화번호</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <!-- Honeypot field (봇 방지) -->
+                            <div style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;">
+                                <label for="website">웹사이트</label>
+                                <input type="text" id="website" name="website" autocomplete="off" tabindex="-1" aria-hidden="true">
+                            </div>
+                            <div class="form-group form-group-full">
+                                <label for="message">문의 내용 *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">문의하기</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./assets/img/cls-black-hor-logo.svg" alt="CLS Solution Logo" style="height: 32px; width: auto; filter: brightness(0) invert(1);">
+                    </div>
+                    <p class="footer-description">
+                        AI 기술로 건설의 신뢰를 설계합니다
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">제품</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products">SECOND EYES 01</a></li>
+                        <li><a href="#products">SECOND EYES 02</a></li>
+                        <li><a href="#technology">핵심 기술</a></li>
+                        <li><a href="#contact">상담 신청</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">회사</h4>
+                    <ul class="footer-links">
+                        <li><a href="#vision">회사소개</a></li>
+                        <li><a href="#partners">파트너사</a></li>
+                        <li><a href="#ceo">CEO 메시지</a></li>
+                        <li><a href="#contact">문의하기</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">지원</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">고객지원</a></li>
+                        <li><a href="#">기술문서</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2025 CLS Solution. All rights reserved.
+                </p>
+                <div class="footer-legal">
+                    <!-- <a href="#">이용약관</a>
+                    <span class="separator">|</span> -->
+                    <!-- <a href="#">개인정보처리방침</a>
+                    <span class="separator">|</span> -->
+                    <a href="#">사업자정보확인</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="맨 위로">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <!-- Section Indicator -->
+    <div id="section-indicator" class="section-indicator">
+        <div class="indicator-items">
+            <a href="#hero" class="indicator-item" data-section="hero" title="홈">
+                <span class="indicator-dot"></span>
+            </a>
+            <a href="#vision" class="indicator-item" data-section="vision" title="회사소개">
+                <span class="indicator-dot"></span>
+            </a>
+            <a href="#products" class="indicator-item" data-section="products" title="제품">
+                <span class="indicator-dot"></span>
+            </a>
+            <a href="#technology" class="indicator-item" data-section="technology" title="기술·R&D">
+                <span class="indicator-dot"></span>
+            </a>
+            <a href="#partners" class="indicator-item" data-section="partners" title="파트너사">
+                <span class="indicator-dot"></span>
+            </a>
+            <a href="#contact" class="indicator-item" data-section="contact" title="문의하기">
+                <span class="indicator-dot"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Current Section Label -->
+    <div id="current-section-label" class="current-section-label">
+        <span class="section-label-text"></span>
+    </div>
+
+    <!-- Modal Container -->
+    <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-container">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 id="modal-title" class="modal-title"></h2>
+                <button id="modal-close" class="modal-close" aria-label="모달 닫기">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div id="modal-body" class="modal-body">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+
+            <!-- Modal Footer -->
+            <div id="modal-footer" class="modal-footer">
+                <!-- Optional footer content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script-v2.js"></script>
+</body>
+</html>

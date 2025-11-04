@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SVG Motion Preview - Temporary</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --gap: 16px;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      padding: 24px;
+    }
+    header { margin-bottom: 24px; }
+    h1 { font-size: 20px; margin: 0 0 6px; }
+    .sub { color: var(--muted); font-size: 12px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: var(--gap);
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 12px;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .title { font-size: 14px; margin: 0 0 10px; color: var(--text); }
+    .path { font-size: 11px; color: var(--muted); margin: 0 0 10px; word-break: break-all; }
+    .viewer {
+      width: 100%;
+      height: 420px; /* unified preview height */
+      border: none;
+      background: #0b1020;
+      border-radius: 8px;
+    }
+    @media (max-width: 480px) {
+      .viewer { height: 360px; }
+    }
+  </style>
+  <!-- Note: using <object> so SMIL/CSS animations inside SVG run reliably -->
+  <!-- This page is temporary for quick motion checks. -->
+</head>
+<body>
+  <header>
+    <h1>SVG Motion Preview</h1>
+    <div class="sub">임시 모션 확인 페이지 (assets/svg/*)</div>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <h2 class="title">camera-eye.svg</h2>
+      <div class="path">assets/svg/camera-eye.svg</div>
+      <object class="viewer" type="image/svg+xml" data="assets/svg/camera-eye.svg"></object>
+    </div>
+
+    <div class="card">
+      <h2 class="title">camera-eye copy.svg</h2>
+      <div class="path">assets/svg/camera-eye copy.svg</div>
+      <object class="viewer" type="image/svg+xml" data="assets/svg/camera-eye%20copy.svg"></object>
+    </div>
+
+    <div class="card">
+      <h2 class="title">chart.svg</h2>
+      <div class="path">assets/svg/chart.svg</div>
+      <object class="viewer" type="image/svg+xml" data="assets/svg/chart.svg"></object>
+    </div>
+
+    <div class="card">
+      <h2 class="title">chart copy.svg</h2>
+      <div class="path">assets/svg/chart copy.svg</div>
+      <object class="viewer" type="image/svg+xml" data="assets/svg/chart%20copy.svg"></object>
+    </div>
+
+    <div class="card">
+      <h2 class="title">neural-network.svg</h2>
+      <div class="path">assets/svg/neural-network.svg</div>
+      <object class="viewer" type="image/svg+xml" data="assets/svg/neural-network.svg"></object>
+    </div>
+
+    <div class="card">
+      <h2 class="title">neural-network copy.svg</h2>
+      <div class="path">assets/svg/neural-network copy.svg</div>
+      <object class="viewer" type="image/svg+xml" data="assets/svg/neural-network%20copy.svg"></object>
+    </div>
+
+    <div class="card">
+      <h2 class="title">scale.svg</h2>
+      <div class="path">assets/svg/scale.svg</div>
+      <object class="viewer" type="image/svg+xml" data="assets/svg/scale.svg"></object>
+    </div>
+
+    <div class="card">
+      <h2 class="title">scale copy.svg</h2>
+      <div class="path">assets/svg/scale copy.svg</div>
+      <object class="viewer" type="image/svg+xml" data="assets/svg/scale%20copy.svg"></object>
+    </div>
+    
+    <div class="card">
+        <h2 class="title">detection-frame.svg</h2>
+        <div class="path">assets/svg/detection-frame.svg</div>
+        <object class="viewer" type="image/svg+xml" data="assets/svg/detection-frame.svg"></object>
+      </div>
+  </section>
+</body>
+</html>
+
+

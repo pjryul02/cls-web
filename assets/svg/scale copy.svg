@@ -1,0 +1,175 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- SECOND EYES 02 - Scale (Weight System) -->
+  <defs>
+    <linearGradient id="grad-platform" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="grad-truck-scale" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+
+    <style>
+      @keyframes weight-update {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+      .weight-display {
+        animation: weight-update 2s ease-in-out infinite;
+      }
+      @keyframes progress {
+        0% { width: 0; }
+        100% { width: 100%; }
+      }
+      .progress-bar {
+        animation: progress 3s ease-out forwards;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+      }
+      .float-icon {
+        animation: float 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F9FAFB"/>
+
+  <!-- Weighing Platform (Scale Base) -->
+  <g id="platform">
+    <!-- Platform Surface -->
+    <rect x="80" y="180" width="240" height="20" fill="url(#grad-platform)" rx="2"/>
+    <rect x="80" y="180" width="240" height="5" fill="#9CA3AF" opacity="0.5"/>
+
+    <!-- Platform Edges (3D Effect) -->
+    <path d="M 80 200 L 70 210 L 310 210 L 320 200 Z" fill="#374151"/>
+
+    <!-- Load Cells (Sensors) -->
+    <rect x="90" y="200" width="10" height="15" fill="#1E40AF" rx="2"/>
+    <rect x="200" y="200" width="10" height="15" fill="#1E40AF" rx="2"/>
+    <rect x="310" y="200" width="10" height="15" fill="#1E40AF" rx="2"/>
+
+    <!-- Support Base -->
+    <rect x="70" y="215" width="260" height="5" fill="#4B5563"/>
+  </g>
+
+  <!-- Truck on Scale -->
+  <g id="truck-on-scale">
+    <!-- Truck Body -->
+    <rect x="140" y="130" width="120" height="50" fill="url(#grad-truck-scale)" rx="4"/>
+
+    <!-- Cabin -->
+    <rect x="130" y="145" width="20" height="35" fill="#1E40AF"/>
+    <rect x="135" y="150" width="10" height="15" fill="#E5E7EB" rx="2"/>
+
+    <!-- Cargo Container -->
+    <rect x="165" y="135" width="90" height="40" fill="#3B82F6" rx="2"/>
+
+    <!-- Wheels -->
+    <circle cx="155" cy="180" r="8" fill="#374151"/>
+    <circle cx="245" cy="180" r="8" fill="#374151"/>
+    <circle cx="155" cy="180" r="4" fill="#9CA3AF"/>
+    <circle cx="245" cy="180" r="4" fill="#9CA3AF"/>
+
+    <!-- Cargo Load Indicator -->
+    <rect x="175" y="145" width="70" height="6" fill="#1E40AF" opacity="0.3"/>
+    <rect x="175" y="145" width="52" height="6" fill="#10B981" class="progress-bar"/>
+  </g>
+
+  <!-- Weight Display Panel -->
+  <g id="display-panel">
+    <!-- Display Box -->
+    <rect x="100" y="40" width="200" height="70" fill="#1F2937" stroke="#1E40AF" stroke-width="2" rx="8"/>
+
+    <!-- Display Screen -->
+    <rect x="110" y="50" width="180" height="50" fill="#0A0E14" rx="4"/>
+
+    <!-- Weight Text -->
+    <text x="200" y="75" font-family="Pretendard, sans-serif" font-size="24" font-weight="700" fill="#10B981" text-anchor="middle" class="weight-display">15.8</text>
+    <text x="240" y="75" font-family="Pretendard, sans-serif" font-size="16" font-weight="600" fill="#10B981" class="weight-display">톤</text>
+
+    <!-- Speed Indicator -->
+    <text x="200" y="95" font-family="Pretendard, sans-serif" font-size="11" fill="#6B7280" text-anchor="middle">속도: 12 km/h</text>
+  </g>
+
+  <!-- AI Status Badge -->
+  <g id="ai-status">
+    <rect x="320" y="50" width="60" height="25" fill="#10B981" rx="12"/>
+    <text x="350" y="67" font-family="Pretendard, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">AI 보정</text>
+  </g>
+
+  <!-- Before/After Comparison Chart -->
+  <g id="comparison-chart">
+    <!-- Chart Background -->
+    <rect x="30" y="230" width="150" height="50" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" rx="4"/>
+
+    <!-- Before Bar (Red) -->
+    <rect x="40" y="245" width="60" height="12" fill="#EF4444" rx="2"/>
+    <text x="105" y="254" font-family="Pretendard, sans-serif" font-size="10" fill="#6B7280">보정 전: 16.5t</text>
+
+    <!-- After Bar (Blue) -->
+    <rect x="40" y="265" width="50" height="12" fill="#1E40AF" rx="2"/>
+    <text x="95" y="274" font-family="Pretendard, sans-serif" font-size="10" fill="#6B7280">보정 후: 15.8t</text>
+  </g>
+
+  <!-- Data Analysis Panel -->
+  <g id="data-panel">
+    <!-- Panel Box -->
+    <rect x="220" y="230" width="160" height="50" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" rx="4"/>
+
+    <!-- Data Points -->
+    <g font-family="Pretendard, sans-serif" font-size="10" fill="#374151">
+      <text x="230" y="245">차량번호: 12가3456</text>
+      <text x="230" y="260">보정오차: -0.7t (-4.2%)</text>
+      <text x="230" y="275">신뢰도: 98.5%</text>
+    </g>
+  </g>
+
+  <!-- Sensor Waves (Signal Indicators) -->
+  <g id="sensor-waves" stroke="#1E40AF" stroke-width="1.5" fill="none" opacity="0.4">
+    <!-- Left Sensor -->
+    <path d="M 75 195 Q 65 195 60 190">
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 75 195 Q 65 195 55 185">
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Right Sensor -->
+    <path d="M 325 195 Q 335 195 340 190">
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 325 195 Q 335 195 345 185">
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- AI Processing Indicator -->
+  <g id="ai-processing" class="float-icon">
+    <circle cx="50" cy="60" r="20" fill="#1E40AF" opacity="0.2"/>
+    <text x="50" y="68" font-family="Pretendard, sans-serif" font-size="20" text-anchor="middle">🤖</text>
+  </g>
+
+  <!-- Accuracy Indicator -->
+  <g id="accuracy">
+    <rect x="20" y="110" width="80" height="24" fill="#10B981" rx="12"/>
+    <text x="60" y="126" font-family="Pretendard, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">오차 ±0.5%</text>
+  </g>
+
+  <!-- Real-time Label -->
+  <g id="realtime-label">
+    <circle cx="355" cy="20" r="5" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <text x="365" y="24" font-family="Pretendard, sans-serif" font-size="11" font-weight="600" fill="#10B981">실시간 측정</text>
+  </g>
+
+  <!-- Direction Arrow -->
+  <g id="direction-arrow" fill="#3B82F6" opacity="0.5">
+    <path d="M 100 160 L 110 155 L 110 165 Z"/>
+  </g>
+</svg>
