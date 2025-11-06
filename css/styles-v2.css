@@ -1227,16 +1227,17 @@ section {
   gap: var(--spacing-3xl);
 }
 
-@media (min-width: 1024px) {
-  .contact-grid {
-    grid-template-columns: 1fr 1.5fr;
-  }
-}
-
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .contact-info {
+    flex-direction: row;
+    gap: var(--spacing-lg);
+  }
 }
 
 .contact-item {
@@ -1247,6 +1248,8 @@ section {
   border-radius: var(--border-radius-lg);
   border: var(--border-width) solid var(--color-gray-200);
   transition: all var(--transition-base);
+  flex: 1;
+  min-width: 0;
 }
 
 .contact-item:hover {
